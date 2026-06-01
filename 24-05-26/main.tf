@@ -1,13 +1,13 @@
 module "namerg" {
   source="./modules/rg"
-  rg-name=var.rg-name
-  location=var.rg-location
+  rg_name=var.rg_name
+  rg_location=var.rg_location
 }
 
 module "namesa"{
   source="./modules/sa"
   depends_on=[module.namerg]
-  sa-name=var.saname
-  rg-name=module.namerg.rg-name
-rg-location=module.namerg.rg-location
+  saname=var.saname
+  rg_name=var.rg_name
+  rg_location=var.rg_location
 }

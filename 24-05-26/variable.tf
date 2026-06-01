@@ -1,7 +1,7 @@
-variable "rg-name" {
+variable "rg_name" {
 }
 variable "saname" {
 }
 
-variable "rg-location" {
+variable "rg_location" {
 }

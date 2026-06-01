@@ -1,4 +1,4 @@
-variable "rg-name" {
+variable "rg_name" {
 }
-variable "rg-location" {
+variable "rg_location" {
 }
