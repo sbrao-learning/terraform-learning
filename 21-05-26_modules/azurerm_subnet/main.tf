@@ -1,5 +1,5 @@
-resource "azurerm_subnet" "this"{
-    for_each=var.subnet
+resource "azurerm_subnet" "dev"{
+    for_each=var.subnet_dev
     name=each.value.name
     resource_group_name=each.value.rg-name
     virtual_network_name=each.value.vnet-name
